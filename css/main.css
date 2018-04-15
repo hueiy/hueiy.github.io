@@ -106,8 +106,8 @@ dfdd {
 }
 @media (max-width:768px){
 	.dddhhh {
-	width: 3390px;
-		height: 409px;
+	width: 400px;
+		height: 483px;
 		display: inline-block;
 	background: url(../images/app2.png) no-repeat 0px 0px;
 	background-size: 100%;
@@ -189,8 +189,8 @@ dfdd {
 
 @media (max-width:480px){
 	.dddhhh {
-	width: 400px;
-		height: 483px;
+	width: 300px;
+		height: 362px;
 		display: inline-block;
 	background: url(../images/app2.png) no-repeat 0px 0px;
 	background-size: 100%;
@@ -207,8 +207,8 @@ dfdd {
     background:#fd574a;  
     color:#f2f2f2;  
       
-    padding: 20px 120px 20px 120px;  
-    font-size:25px;  
+    padding: 15px 70px 15px 70px;  
+    font-size:20px;  
     font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;  
     font-weight:bold;  
     border-radius:3px;  
@@ -218,12 +218,11 @@ dfdd {
     transition:all linear 0.30s;  
       
     }  
-	dfdd {
+dfdd {
 	position: absolute;
-	bottom: 35px;
+	bottom: 30px;
 	left: 50%;
-	margin-left:-148px;
-
+	margin-left:-98px;
 }
 }
 @media (max-width:320px){
