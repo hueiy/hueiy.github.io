@@ -1,10 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="SHORTCUT ICON" href="images/favicon.ico">
 <!-- TemplateBeginEditable name="doctitle" -->
 <title>制衣账本APP官网-服装行业的必备软件</title>
+
 <!-- TemplateEndEditable -->
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
@@ -17,6 +20,30 @@ body {
 </style> -->
 <!--<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />-->
 <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript">
+<!--
+function sayHello() {
+  alert("Hello World")
+}
+var is_weixin = (function(){return navigator.userAgent.toLowerCase().indexOf('micromessenger') !== -1})();  
+window.onload = function() {  
+    var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight; //兼容IOS，不需要的可以去掉  
+    var btn = document.getElementById('J_weixin');  
+    var tip = document.getElementById('weixin-tip');  
+    var close = document.getElementById('close');  
+    if (is_weixin) {  
+        btn.onclick = function(e) {  
+            tip.style.height = winHeight + 'px'; //兼容IOS弹窗整屏  
+            tip.style.display = 'block';  
+            return false;  
+        }  
+        close.onclick = function() {  
+            tip.style.display = 'none';  
+        }  
+    }  
+} 
+//-->
+</script>
 
 </head>
 
@@ -24,9 +51,10 @@ body {
 
 <div class="dddhhh">
   <dfdd><div id="login_click">  
-        <a id="btlogin" href="https://github.com/hueiy/ClothingBooks/releases/download/1/MainActivity.apk">  下 载   </a>  
+<!--  <input type="button" onclick="sayHello()" value="下 载" />-->
+        <a id="J_weixin" class="android-btn" href="https://github.com/hueiy/ClothingBooks/releases/download/1/MainActivity.apk" onclick="is_weixin()" >  下 载   </a>  
   </div> </dfdd>
 </div>
+<div id="weixin-tip"><p><img src="images/live_weixin.png" alt="微信打开"/><span id="close" title="关闭" class="close">×</span></p></div>
 </body>
 </html>
-
